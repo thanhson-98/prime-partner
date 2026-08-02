@@ -57,6 +57,19 @@ message-photo.png / member-advisor.png / member-coo.png / member-ceo.png / sns-f
 | `--gray` | `#f5f5f5` | セクション背景 |
 | `--flow-1〜4` | `#86b1dc / #4779aa / #1d548c / #d2bf6c` | FLOWステップカラー |
 
+## SEO設定について
+
+`index.html` の `<head>` に基本的なSEOタグ（canonical / OGP / Twitter Card / JSON-LD構造化データ）と、
+`robots.txt` / `sitemap.xml` を追加しています。すべて仮ドメイン **`https://primepartner.vn/`** を前提に記述しているため、
+実際の本番ドメインが確定・変更になった場合は以下の絶対URLをすべて置換してください:
+
+- `index.html`: `<link rel="canonical">`, `og:url`, `og:image`, `twitter:image`, JSON-LD内の `url` / `logo`
+- `robots.txt`: `Sitemap:` の行
+- `sitemap.xml`: `<loc>` の値
+
+favicon は `assets/logo-company.svg` をSVG形式でそのまま使用しています（`favicon.ico` / `apple-touch-icon.png` 等の
+複数解像度PNGセットは未作成のため、iOSホーム画面アイコン等に対応する場合はFigmaから別途書き出してください）。
+
 ## 実装メモ
 
 - FLOWの矢印バナー、CONTACTボタンの二重枠、SCROLLインジケーター、キャレット・封筒アイコンは
