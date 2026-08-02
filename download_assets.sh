@@ -12,11 +12,11 @@ BASE="https://www.figma.com/api/mcp/asset"
 
 declare -A FILES=(
   ["hero-bg.png"]="ecd1af7a-2eb8-48ad-ad74-dc1455adf565"
-  ["logo-white-pc.png"]="634cd2b4-b70c-47bf-af49-a6b8cdb93f4c"
-  ["logo-white-sp.png"]="2409e7ab-3af5-4a30-86b3-17ce8e374036"
-  ["logo-navy-pc.png"]="9f43b7f8-3e0b-4a17-92e0-4487a7a89229"
-  ["logo-navy-sp.png"]="6be074b1-f973-44ad-bdcc-b74692506686"
-  ["logo-company.png"]="50033749-08f1-43fb-9600-4b387b8bb062"
+  ["logo-white-pc.svg"]="634cd2b4-b70c-47bf-af49-a6b8cdb93f4c"
+  ["logo-white-sp.svg"]="2409e7ab-3af5-4a30-86b3-17ce8e374036"
+  ["logo-navy-pc.svg"]="9f43b7f8-3e0b-4a17-92e0-4487a7a89229"
+  ["logo-navy-sp.svg"]="6be074b1-f973-44ad-bdcc-b74692506686"
+  ["logo-company.svg"]="50033749-08f1-43fb-9600-4b387b8bb062"
   ["client-logo-01.png"]="ad062848-1083-4bc7-98f2-efbe7eac8a03"
   ["client-logo-02.png"]="b96e8563-f8cb-4508-a706-5cd58d87e72c"
   ["client-logo-03.png"]="04b6fa93-b3ca-474c-9b8f-6239a8791649"
@@ -32,9 +32,9 @@ declare -A FILES=(
   ["member-advisor.png"]="764b4879-9d07-4103-b8a2-70d8de49b1cb"
   ["member-coo.png"]="947b8f1f-81f5-4a01-bb6d-7cd9fa8b6c0c"
   ["member-ceo.png"]="df460208-3a77-40d8-8746-6b16b40c6050"
-  ["sns-facebook.png"]="f8233249-a599-44fe-b5a8-f75d99daa580"
-  ["sns-linkedin.png"]="62c6824f-991e-4fbd-92de-932ea73d908b"
-  ["sns-other.png"]="7936c109-44f1-4896-a291-a8a400c14c57"
+  ["sns-facebook.svg"]="f8233249-a599-44fe-b5a8-f75d99daa580"
+  ["sns-linkedin.svg"]="62c6824f-991e-4fbd-92de-932ea73d908b"
+  ["sns-other.svg"]="7936c109-44f1-4896-a291-a8a400c14c57"
 )
 
 ok=0; ng=0

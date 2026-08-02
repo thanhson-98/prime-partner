@@ -35,9 +35,9 @@ bash download_assets.sh
 Figmaで該当レイヤーを選択 → 右パネル「Export」からPNG書き出しし、
 `assets/` に以下のファイル名で保存してください:
 
-hero-bg / logo-white-pc / logo-white-sp / logo-navy-pc / logo-navy-sp / logo-company /
-client-logo-01〜06 / about-photo / about-side-photo / business-icon-01〜02 / business-bg /
-message-photo / member-advisor / member-coo / member-ceo / sns-facebook / sns-linkedin / sns-other
+hero-bg.png / logo-white-pc.svg / logo-white-sp.svg / logo-navy-pc.svg / logo-navy-sp.svg / logo-company.svg /
+client-logo-01〜06.png / about-photo.png / about-side-photo.png / business-icon-01〜02.png / business-bg.png /
+message-photo.png / member-advisor.png / member-coo.png / member-ceo.png / sns-facebook.svg / sns-linkedin.svg / sns-other.svg
 
 ## フォントについて
 
