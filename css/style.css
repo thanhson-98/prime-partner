@@ -393,7 +393,7 @@ ul {
 }
 .about__side-photo {
   position: absolute;
-  left: 0;
+  left: max(0px, calc((100% - 1440px) / 2));
   top: 886px;
   width: 387px;
   height: 948px;
@@ -412,7 +412,7 @@ ul {
 
 .values {
   width: 630px;
-  margin: 110px 145px 0 auto;
+  margin: 110px max(145px, calc((100% - 1440px) / 2 + 145px)) 0 auto;
   display: flex;
   flex-direction: column;
   gap: 120px;
@@ -864,6 +864,12 @@ ul {
 .member-card__sns a:hover {
   opacity: 0.7;
 }
+.member-card__sns a.is-disabled {
+  filter: grayscale(1);
+  opacity: 0.35;
+  cursor: not-allowed;
+  pointer-events: none;
+}
 
 /* =============== CTA =============== */
 .cta {
@@ -938,11 +944,12 @@ ul {
 .company__row {
   display: flex;
   align-items: center;
-  height: 50px;
+  min-height: 50px;
+  padding: 6px 0;
   border-bottom: 1px solid var(--line);
 }
 .company__row--tall {
-  height: 80px;
+  min-height: 80px;
 }
 .company__row dt {
   width: 100px;
@@ -1488,7 +1495,8 @@ ul {
     width: 150px;
   }
   .company__info {
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
   }
   .company__name {
     font-size: 18px;
