@@ -194,6 +194,13 @@ ul {
   height: 100%;
   object-fit: cover;
 }
+.hero__slide {
+  opacity: 0;
+  transition: opacity 1.2s ease-in-out;
+}
+.hero__slide.is-active {
+  opacity: 1;
+}
 .hero__overlay {
   position: absolute;
   inset: 0;

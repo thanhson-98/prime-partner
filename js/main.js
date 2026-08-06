@@ -6,6 +6,20 @@
 (function () {
   'use strict';
 
+  // ----- Hero スライドショー -----
+  var heroSlides = document.querySelectorAll('.hero__slide');
+  if (heroSlides.length > 1) {
+    var currentSlide = 0;
+    var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!prefersReducedMotion) {
+      setInterval(function () {
+        heroSlides[currentSlide].classList.remove('is-active');
+        currentSlide = (currentSlide + 1) % heroSlides.length;
+        heroSlides[currentSlide].classList.add('is-active');
+      }, 5000);
+    }
+  }
+
   // ----- スクロールヘッダー切り替え -----
   var heroHeader = document.getElementById('heroHeader');
   var scrollHeader = document.getElementById('scrollHeader');
